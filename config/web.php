@@ -55,8 +55,8 @@ $config = [
                 '<controller>/create'=>'<controller>/index',
 
                 // Просмотр новости
-                '<controller>/<alias:[A-zА-я0-9\-]+>'=>'<controller>/view',
-                '<controller>/<alias:[A-zА-я0-9\-]+>/edit'=>"<controller>/view",
+                '<controller>/<alias:[A-zА-я0-9\-\']+>'=>'<controller>/view',
+                '<controller>/<alias:[A-zА-я0-9\-\']+>/edit'=>"<controller>/view",
 
                 // Остальные (а вдруг?) машруты
                // '<controller>/<alias:[a-zA-Z0-9\-_?)(]+>/<action>'=>'<controller>/<action>',
@@ -65,7 +65,7 @@ $config = [
 
                 // Маршруты редактирования
                 'admin/<controller>/create'=>'<controller>/create',
-                'admin/<controller>/<alias:[A-zА-я0-9\-]+>/edit'=>'<controller>/edit',
+                'admin/<controller>/<alias:[A-zА-я0-9\-\']+>/edit'=>'<controller>/edit',
 
                 //'<module:cabinet>/<controller:\w+>/<id:\d+>' => '<module>/<controller>/view',
                 //'<module:cabinet>/<controller:\w+>/<action:\w+>/<id:\d+>' => '<module>/<controller>/<action>',
