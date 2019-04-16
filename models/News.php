@@ -16,6 +16,7 @@ class News extends ActiveRecord
     {
         return [
             [['name', 'description', 'content', 'date', 'activity'], 'required'],
+            [['name'], 'match', 'pattern' => '/^[0-9A-zА-я\s]+$/u'],
             [['date'], 'date'],
             [['date'], 'filter', 'filter' => function ($value) {
                 // нормализация значения происходит тут
